@@ -1,7 +1,6 @@
 //馬達 搖桿 VCC:13V(5V) Data：12S Command：11S Clock：13S Attention：10S GND:13G
 #include "PS2X_lib.h"  // 引入PS2X庫
 #include <Servo.h>     // 引入伺服馬達庫
-#include <Otto.h>      // 引入Otto機器人庫
 #include <CuteBuzzerSounds.h>  // 引入蜂鳴器聲音庫
 #include <Ultrasonic.h>
 
@@ -9,7 +8,6 @@ PS2X ps2x;  // 創建PS2控制器對象
 int error;
 int X, Y, Val;
 int i = 0;
-Otto Otto;  // 創建Otto機器人對象
 Ultrasonic ultrasonic(8, 9);
 
 // 定義伺服馬達接腳
