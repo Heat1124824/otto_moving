@@ -288,6 +288,7 @@ void loop() {
         servo_5.write(i);
         delay(30);
     }
+    cute.play(S_SUPER_HAPPY);
     delay(3000);
     for (int i = 135; i >= 90; i -= 2) {
         AL.write(i);
